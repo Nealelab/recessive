@@ -15,7 +15,7 @@ UK Biobank inputs and locations:
 **Hail_&_Export_Pipeline_Genotyped_dataset.nb**: takes matrix table from the output of the annot_genotype.py script, annotates, variant quality control, subsets subjects, filtered to include only the ~175 genes included in [Counsyl Foresight Carrier Screen disease list](https://s3.amazonaws.com/static.counsyl.com/website/PDFs/Foresight+Universal+Disease+List.pdf), filtered based on allele frequency (kept variants with frequency < 5% and > 95%), filtered AC, filtered based on vepped "most severe consequence", and parsed to make two different outputs for exports **1.) annotations x variant, and 2.) variant entries (genotypes) x samples**. Exports these two datasets as bgz to local machine for use with R.
 
 ### Imputed Data
-**write_my.py**: imports multiple bgen files (imputed data for each chromosome), takes rows of matrix table and writes to new matrix table.
+**write_mt.py**: imports multiple bgen files (imputed data for each chromosome), takes rows of matrix table and writes to new matrix table.
 
 **annot_updated_imputed.py**: reads in matrix table (output of write_mt.py), annotates variants using vep command, writes new matrix table 
 
