@@ -26,6 +26,6 @@ UK Biobank inputs and locations:
 
 **connecting instance to bucket**: connecting gcloud VM to 'gd://rec_project' bucket
 
-**counsyl_recessive_gene_list.txt**: ~175 genes used to subset variants after vep annotation annotates 'gene with most severe consequence'
+**counsyl_recessive_gene_list.txt**: genes used to subset variants after vep annotation annotates 'gene with most severe consequence'
 
 **ukb31063.gwas_samples.both_sexes.txt**: 'gs://rec_project/ukb31063.gwas_samples.both_sexes.txt', used to subset individuals to include only white Europeans
