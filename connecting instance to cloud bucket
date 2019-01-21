@@ -1,0 +1,17 @@
+start instance
+
+from terminal:
+ssh -i ~/.ssh/google_compute_engine tobynbranck@35.231.253.54
+
+source activate recessive_data
+
+jupyter notebook
+
+# gives a link tp put into browser
+
+open new tab in terminal:
+ssh -L 8889:localhost:8888 -i ~/.ssh/google_compute_engine tobynbranck@35.231.253.54
+
+##changed 8888 to 8889 because I already had jupyter running locally
+
+paste jupyter link from first tab to browser and change the 8888 to 8889
